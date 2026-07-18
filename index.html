@@ -3,54 +3,177 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Godwin &amp; Marlowe</title>
-<meta name="description" content="Godwin & Marlowe — an independent advisory partnership.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f1e38'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23c9a86a' text-anchor='middle'%3EGM%3C/text%3E%3C/svg%3E">
+<title>Godwin & Marlowe — Senior marketing counsel</title>
+<meta name="description" content="Godwin & Marlowe is a senior marketing partnership. Data-driven web, SEO, and email with the reporting to prove it — you work with the partners.">
+<meta name="theme-color" content="#0E1B2A">
+<meta property="og:title" content="Godwin &amp; Marlowe — Marketing that answers to the numbers.">
+<meta property="og:description" content="Godwin & Marlowe is a senior marketing partnership. Data-driven web, SEO, and email with the reporting to prove it — you work with the partners.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#0f1e38;--ivory:#f6f3ec;--brass:#b08d4f;--ink:#1b2436;--mute:#5c657a;}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--ivory);color:var(--ink);font:400 17px/1.65 Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:720px;margin:0 auto;padding:0 28px}
-  header{padding:64px 0 0;text-align:center}
-  .mark{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--brass);font-family:system-ui,sans-serif;font-weight:600}
-  h1{font-size:clamp(38px,7vw,58px);line-height:1.05;margin:26px 0 0;color:var(--navy);letter-spacing:.01em}
-  .amp{color:var(--brass);font-style:italic}
-  .rule{width:54px;height:1px;background:var(--brass);margin:34px auto}
-  .lede{font-size:clamp(19px,3vw,23px);color:var(--ink);text-align:center;max-width:560px;margin:0 auto}
-  main{padding:56px 0}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:52px}
-  .col h2{font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:700;margin-bottom:12px}
-  .col p{font-size:16px;color:#3a465c}
-  footer{border-top:1px solid #dcd6c8;padding:34px 0 60px;text-align:center;font-family:system-ui,sans-serif}
-  footer a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:1px}
-  .fine{display:block;margin-top:16px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a927f}
-  @media(max-width:560px){.cols{grid-template-columns:1fr;gap:30px}}
+  :root{
+    --ground:#FBFAF7;--ground2:#F1EFE8;--text:#0E1B2A;--soft:#45586E;
+    --accent:#0E1B2A;--line:#0E1B2A;--rule:#E4E2DA;--kicker:#5C6E82;
+    --maxw:1180px;--display:"Archivo",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--text);font-family:var(--body);
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;margin:0;letter-spacing:-.02em}
+  a{color:inherit}
+  .kicker{font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--kicker);margin:0 0 22px}
+  .sub{color:var(--soft);font-size:18px;max-width:52ch}
+  .btn{display:inline-block;font-family:var(--body);font-weight:500;font-size:15px;
+    padding:12px 26px;border-radius:999px;text-decoration:none;transition:.18s ease}
+  .btn--solid{background:var(--accent);color:#fff}
+  .btn--solid:hover{filter:brightness(1.06)}
+  .btn--ghost{border:1.5px solid var(--accent);color:var(--accent)}
+  .btn--ghost:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .link{color:var(--accent);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:8px}
+  .link:hover{gap:12px}
+  .link svg{transition:transform .18s ease}.link:hover svg{transform:translateX(3px)}
+  section{padding:104px 0}
+  .divide{border-top:1px solid var(--rule)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+  header{position:sticky;top:0;z-index:10;background:rgba(251,250,247,.86);
+    backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent}
+  header.scrolled{border-bottom-color:var(--rule)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{font-family:var(--display);font-size:26px;font-weight:700;letter-spacing:-.02em;text-decoration:none}
+  .nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0}
+  .nav a.navlink{text-decoration:none;font-size:15px;color:var(--text);opacity:.82}
+  .nav a.navlink:hover{opacity:1}
+  .nav .right{display:flex;align-items:center;gap:30px}
+  .hero{padding:132px 0 128px;text-align:center}
+  .hero h1{font-size:clamp(48px,8vw,104px);letter-spacing:-.02em}
+  .hero .sub{margin:26px auto 34px;font-size:20px;text-align:center}
+  .position{text-align:center}
+  .position h2{font-size:clamp(30px,4.4vw,52px);max-width:22ch;margin:0 auto}
+  .position .sub{margin:20px auto 0;text-align:center}
+  .position .rule{height:1px;background:var(--accent);max-width:520px;margin:52px auto 0;opacity:.65}
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);margin-top:12px}
+  .svc{padding:0 40px}
+  .svc + .svc{border-left:1px solid var(--rule)}
+  .svc .glyph{width:44px;height:44px;color:var(--text);margin-bottom:26px}
+  .svc h3{font-size:27px;margin-bottom:14px}
+  .svc p{color:var(--soft);margin:0;font-size:15.5px;max-width:34ch}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px}
+  .step{padding:0 30px}
+  .step + .step{border-left:1px solid var(--rule)}
+  .step .num{font-family:var(--display);font-size:52px;color:var(--accent);line-height:1;font-weight:400}
+  .step h3{font-size:22px;margin:14px 0 10px}
+  .step p{color:var(--soft);font-size:14.5px;margin:0}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:44px}
+  .card .thumb{aspect-ratio:16/10;border-radius:14px;background:radial-gradient(120% 120% at 20% 15%,#E7EAF0 0%,#DDE2EA 55%,#D2D9E4 100%);
+    border:1px solid var(--rule);display:flex;align-items:center;justify-content:center}
+  .card .thumb svg{width:48px;height:48px;color:#0E1B2A;opacity:.45}
+  .card h3{font-size:22px;margin:20px 0 4px}
+  .card span{color:var(--soft);font-size:14px}
+  .ppl{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:44px;max-width:760px}
+  .person{display:flex;align-items:center;gap:22px}
+  .avatar{width:96px;height:96px;border-radius:50%;flex:0 0 auto;background:radial-gradient(80% 80% at 50% 35%,#E4E8EF,#D3DAE4);
+    border:1px solid var(--rule);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+  .avatar svg{width:60px;height:60px;color:#0E1B2A;opacity:.3;transform:translateY(6px)}
+  .person h3{font-size:22px;margin:0 0 2px}
+  .person span{color:var(--soft);font-size:14.5px}
+  .partners .foot{margin-top:38px;color:var(--soft)}
+  .faq h2{font-size:clamp(28px,4vw,46px);margin-bottom:14px}
+  .acc{border-top:1px solid var(--rule);margin-top:34px}
+  .acc details{border-bottom:1px solid var(--rule)}
+  .acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+    gap:20px;padding:26px 4px;font-family:var(--display);font-size:23px;font-weight:700}
+  .acc summary::-webkit-details-marker{display:none}
+  .acc summary .pm{color:var(--accent);font-family:var(--body);font-size:26px;line-height:1;
+    transition:transform .2s ease;flex:0 0 auto}
+  .acc details[open] summary .pm{transform:rotate(45deg)}
+  .acc .body{padding:0 4px 26px;color:var(--soft);max-width:64ch;margin-top:-6px}
+  .closing{text-align:center;padding:120px 0 96px}
+  .closing h2{font-size:clamp(38px,6vw,72px)}
+  .closing .btn{margin:34px 0 20px}
+  .closing .email{color:var(--soft);font-size:15px}
+  .closing .email a{color:var(--soft);text-decoration:none;border-bottom:1px solid var(--rule)}
+  footer{background:var(--ground2);border-top:1px solid var(--rule)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:30px;align-items:start;padding:56px 0}
+  footer .brand{font-size:24px}
+  .fcol h4{font-family:var(--body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--kicker);margin:0 0 16px;font-weight:600}
+  .fcol a{display:block;text-decoration:none;color:var(--text);opacity:.8;font-size:15px;margin-bottom:10px}
+  .fcol a:hover{opacity:1}
+  .legal{border-top:1px solid var(--rule);padding:22px 0;color:var(--soft);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  @media(max-width:860px){
+    section{padding:76px 0}
+    .cols3,.steps,.work-grid,.ppl{grid-template-columns:1fr}
+    .svc{padding:32px 0}.svc + .svc{border-left:0;border-top:1px solid var(--rule)}
+    .step{padding:26px 0}.step + .step{border-left:0;border-top:1px solid var(--rule)}
+    .nav ul,.nav .right .navlink{display:none}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:34px}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mark">Established Practice</div>
-    <h1>Godwin <span class="amp">&amp;</span> Marlowe</h1>
-    <div class="rule"></div>
-    <p class="lede">An independent advisory partnership working quietly alongside a small number of firms.</p>
-  </header>
-  <main>
-    <div class="cols">
-      <div class="col">
-        <h2>What we do</h2>
-        <p>We advise founders and boards on the decisions that don't fit a template — positioning, capital, and the long arc of a business. Considered counsel, not volume.</p>
-      </div>
-      <div class="col">
-        <h2>How we work</h2>
-        <p>By introduction, and in confidence. Each engagement is scoped to the question in front of it. We keep our list short so the attention stays real.</p>
-      </div>
-    </div>
-  </main>
-  <footer>
-    Enquiries — <a href="mailto:hello@godwinandmarlowe.com">hello@godwinandmarlowe.com</a>
-    <span class="fine">Godwin &amp; Marlowe · By appointment</span>
-  </footer>
-</div>
+<header id="hdr"><div class="wrap nav">
+  <a class="brand" href="#top">Godwin &amp; Marlowe</a>
+  <div class="right"><ul><li><a class="navlink" href="#services">Work</a></li><li><a class="navlink" href="#services">Services</a></li><li><a class="navlink" href="#studio">About</a></li><li><a class="navlink" href="#contact">Contact</a></li></ul>
+  <a class="btn btn--ghost" href="#contact">Let’s Talk</a></div>
+</div></header>
+<main id="top">
+  <section class="hero wrap" aria-label="Introduction">
+    <h1>Marketing that<br>answers to<br>the numbers.</h1>
+    <p class="sub">Data-driven strategies for measurable growth.</p>
+    <a class="link" href="#services">View our approach <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+  </section>
+  <section class="position divide" aria-label="Positioning"><div class="wrap">
+    <p class="kicker">The firm</p><h2>A senior partnership, not a content factory.</h2>
+    <p class="sub">You work with the partners — accountable, measurable, and calm under a board's questions.</p><div class="rule"></div>
+  </div></section>
+  <section id="services" class="divide" aria-label="What we do"><div class="wrap">
+    <p class="kicker">What we do</p><div class="cols3"><div class="svc"><svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="22" cy="22" r="12"/><path d="M31 31l9 9"/></svg><h3>SEO</h3><p>Durable organic growth you can defend in a board deck.</p></div><div class="svc"><svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6v20M24 26c-6 0-11 4-13 8M24 26c6 0 11 4 13 8M8 26h32"/></svg><h3>Web development</h3><p>Sites engineered for conversion and built to be measured.</p></div><div class="svc"><svg class="glyph" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="12" width="32" height="24" rx="2"/><path d="M8 15l16 12 16-12"/></svg><h3>Email</h3><p>Lifecycle revenue programs with the reporting to prove them.</p></div></div>
+  </div></section>
+  <section class="divide" aria-label="How we work"><div class="wrap">
+    <p class="kicker">How we work</p>
+    <h2 style="font-size:clamp(28px,4vw,46px)">A measured, four-step engagement.</h2>
+    <div class="steps"><div class="step"><div class="num">01</div><h3>Diagnose</h3><p>We find where growth is actually leaking.</p></div><div class="step"><div class="num">02</div><h3>Plan</h3><p>A prioritised plan you can take to the board.</p></div><div class="step"><div class="num">03</div><h3>Execute</h3><p>Senior hands do the work, not a junior pod.</p></div><div class="step"><div class="num">04</div><h3>Report</h3><p>Clear numbers, honestly reported, every month.</p></div></div>
+  </div></section>
+  <section class="divide" aria-label="The work"><div class="wrap">
+    <p class="kicker">The work</p>
+    <h2 style="font-size:clamp(28px,4vw,46px)">What we deliver.</h2>
+    <div class="work-grid"><div class="card"><div class="thumb"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="10" width="34" height="28" rx="2"/><path d="M7 17h34M12 24h12M12 29h18"/></svg></div><h3>Websites</h3><span>Conversion-built</span></div><div class="card"><div class="thumb"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="12" width="32" height="24" rx="2"/><path d="M8 15l16 12 16-12"/></svg></div><h3>Email programs</h3><span>Lifecycle revenue</span></div><div class="card"><div class="thumb"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="21" cy="21" r="11"/><path d="M29 29l9 9"/></svg></div><h3>SEO foundations</h3><span>Defensible growth</span></div></div>
+  </div></section>
+  <section id="studio" class="partners divide" aria-label="Who you work with"><div class="wrap">
+    <p class="kicker">Who you work with</p>
+    <h2 style="font-size:clamp(28px,4vw,46px)">You work with the partners. Every time.</h2>
+    <div class="ppl"><div class="person"><span class="avatar" aria-hidden="true"><svg viewBox="0 0 48 48" fill="currentColor"><circle cx="24" cy="18" r="9"/><path d="M8 44c1-9 8-14 16-14s15 5 16 14z"/></svg></span><div><h3>James Marlowe</h3><span>Partner</span></div></div><div class="person"><span class="avatar" aria-hidden="true"><svg viewBox="0 0 48 48" fill="currentColor"><circle cx="24" cy="18" r="9"/><path d="M8 44c1-9 8-14 16-14s15 5 16 14z"/></svg></span><div><h3>Ellen Godwin</h3><span>Partner</span></div></div></div>
+    <p class="foot">Senior counsel on every account, from the first call to the last board report.</p>
+  </div></section>
+  <section class="faq divide" aria-label="FAQ"><div class="wrap">
+    <p class="kicker">Good questions</p><h2>The questions boards ask.</h2>
+    <div class="acc"><details><summary>How do you report on results?<span class="pm">+</span></summary><div class="body">Plain monthly reporting tied to the metrics that matter, in language a board understands — no vanity dashboards.</div></details><details><summary>How do you price engagements?<span class="pm">+</span></summary><div class="body">Fixed-scope engagements and retainers, quoted up front, with the scope written down.</div></details><details><summary>How many clients do you take on?<span class="pm">+</span></summary><div class="body">A handful at a time, so the partners stay on your account rather than delegating it.</div></details><details><summary>What does a typical timeline look like?<span class="pm">+</span></summary><div class="body">We map a realistic timeline in the first call — most engagements show signal within the first quarter.</div></details></div>
+  </div></section>
+  <section id="contact" class="closing divide" aria-label="Contact"><div class="wrap">
+    <h2>Growth you can measure.</h2>
+    <a class="btn btn--ghost" href="mailto:hello@godwinandmarlowe.com">Let’s Talk</a>
+    <p class="email"><a href="mailto:hello@godwinandmarlowe.com">hello@godwinandmarlowe.com</a></p>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <a class="brand" href="#top">Godwin &amp; Marlowe</a>
+    <div class="fcol"><h4>Firm</h4><a href="#services">Work</a><a href="#services">Services</a><a href="#studio">About</a></div>
+    <div class="fcol"><h4>More</h4><a href="#studio">Insights</a><a href="#contact">Contact</a><a href="#">Privacy</a></div>
+    <a class="btn btn--ghost" href="#contact">Let’s Talk</a>
+  </div>
+  <div class="wrap legal"><span>Godwin &amp; Marlowe — Senior marketing counsel.</span><span>&copy; 2026 Godwin &amp; Marlowe</span></div>
+</footer>
+<script>
+  var hdr=document.getElementById('hdr');
+  var f=function(){hdr.classList.toggle('scrolled',window.scrollY>8)};f();
+  window.addEventListener('scroll',f,{passive:true});
+</script>
 </body>
 </html>
